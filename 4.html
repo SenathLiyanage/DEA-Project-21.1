@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contact Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="4.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+
+
+
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-paper-plane"></i> Phoneix Airline</a>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="searchBox">
+        <label for="searchBox" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="1.html">Home</a>
+        <a href="">Profile</a>
+        <a href="2.html">Create Account</a>
+        <a href="4.html">Contact</a>
+        <a href="3.html">About</a>
+        
+    </nav>
+
+    <form action="" class="login-form">
+
+        <div class="inputBox">
+            <span>username</span>
+            <input type="text" placeholder="enter your name">
+        </div>
+
+        <div class="inputBox">
+            <span>password</span>
+            <input type="password" placeholder="enter your password">
+        </div>
+
+        <div class="remember">
+            <input type="checkbox" name="" id="login-remember">
+            <label for="login-remember">remember me</label>
+        </div>
+
+        <input type="submit" class="btn" value="login">
+
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+
+
+        <section>
+            <div class = "image">
+               <img src="images/4.jfif">
+            </div>
+
+            <div class = "content">
+                <h2>Contact Us</h2>
+                <span><!-- line here --></span>
+                <p>
+                    Flight Search Direct is a leading travel price comparison website that finds you the best travel deals. As seasoned travelers ourselves who have always sought out the best ways in which to save money when traveling, we fully understand how frustrating it is when you have to spend hours on end try-ing to compare travel prices.
+
+                </p>
+
+                <p>
+                    Whether you are traveling for business or pleasure, our ultimate goal is al-ways to save you both time and money so that you can focus on the more important things- like planning the fun side of your trip! Please note - We are not a travel agency and we are not selling any tickets directly. If you have an issue with a recent booking - please contact the provider directly.
+                     
+                </p>
+
+         <p>For any other issues - contact@flightsearchdirect.com</p>
+
+         <p>Offices:
+            Flight Search Direct Haarad 7, 4th floor, Browns road, Sri Lanka Flight Search Direct 11407 SW Amu St, Suite #T8759 ,Tualatin, OR, 97062 SL</p>
+                
+
+            <p>For Unpublished Rates - call 24/7 : +94 770 254 693 or +94 888 738 005
+
+                Phoenix, Inc. is not responsible for content</p>
+            </div>
+        </section><br><br>
+      
+        <script>let navbar = document.querySelector('.navbar')
+
+            document.querySelector('#menu-btn').onclick = () =>{
+                navbar.classList.toggle('active');
+                loginForm.classList.remove('active');
+                searchForm.classList.remove('active');
+            }
+            
+            let loginForm = document.querySelector('.login-form')
+            
+            document.querySelector('#login-btn').onclick = () =>{
+                loginForm.classList.toggle('active');
+                navbar.classList.remove('active');
+                searchForm.classList.remove('active');
+            }
+            
+            let searchForm = document.querySelector('.search-form')
+            
+            document.querySelector('#search-btn').onclick = () =>{
+                searchForm.classList.toggle('active');
+                navbar.classList.remove('active');
+                loginForm.classList.remove('active');
+            }
+            
+            window.onscroll = () =>{
+                navbar.classList.remove('active');
+                loginForm.classList.remove('active');
+                searchForm.classList.remove('active');
+            }
+            
+            let themeBtn = document.querySelector('#theme-btn');
+            
+            themeBtn.onclick = () =>{
+                themeBtn.classList.toggle('fa-sun');
+            
+                if(themeBtn.classList.contains('fa-sun')){
+                    document.body.classList.add('active');
+                }else{
+                    document.body.classList.remove('active');
+                }
+            
+            };
+            
+            var swiper = new Swiper(".review-slider", {
+                loop:true,
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 5500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });</script>
+    </body>
+</html>
