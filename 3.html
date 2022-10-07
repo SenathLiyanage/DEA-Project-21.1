@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>About Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="3.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+
+
+
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-paper-plane"></i> Phoneix Airline</a>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="searchBox">
+        <label for="searchBox" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="1.html">Home</a>
+        <a href="">Profile</a>
+        <a href="2.html">Create Account</a>
+        <a href="4.html">Contact</a>
+        <a href="3.html">About</a>
+        
+    </nav>
+
+    <form action="" class="login-form">
+
+        <div class="inputBox">
+            <span>username</span>
+            <input type="text" placeholder="enter your name">
+        </div>
+
+        <div class="inputBox">
+            <span>password</span>
+            <input type="password" placeholder="enter your password">
+        </div>
+
+        <div class="remember">
+            <input type="checkbox" name="" id="login-remember">
+            <label for="login-remember">remember me</label>
+        </div>
+
+        <input type="submit" class="btn" value="login">
+
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+
+
+        <section>
+            <div class = "image">
+               <img src="images/3.jfif">
+            </div>
+
+            <div class = "content">
+                <h2>About Us</h2>
+                <span><!-- line here --></span>
+                <p>Phoenix Airlines is a leading flight price comparison website that finds you the best deal on air tickets. At Flight Search Direct , as seasoned travelers ourselves who have always sought out the best ways in which to save money when traveling, we fully understand how frustrating it is when you have to spend hours on end try-ing to compare flight prices.
+                </p>
+
+                <p>As our name suggests, here at Flight Search Direct we use only the very latest and direct technology to instantly search through thousands of ticket providers to find you the most cost-effective prices. Whether you are traveling for business or pleasure, our ultimate goal is al-ways to save you both time and money so that you can focus on the more important things- like planning the fun side of your trip!</p>
+
+                <p>Working with the world’s leading travel companies (such as Expedia, Priceline, Kayak and more), all you need to do when searching for a plane ticket on our site is to simply enter you origin, destination and dates and we will immediately display the best and most cost-effective options for you. You can then conveniently make a booking and not have to worry about a thing further! Now that’s something to smile about!
+
+                    Phoenix, Inc. is not responsibl</p>
+               
+                
+            </div>
+        </section><br><br>
+      
+        <script>let navbar = document.querySelector('.navbar')
+
+            document.querySelector('#menu-btn').onclick = () =>{
+                navbar.classList.toggle('active');
+                loginForm.classList.remove('active');
+                searchForm.classList.remove('active');
+            }
+            
+            let loginForm = document.querySelector('.login-form')
+            
+            document.querySelector('#login-btn').onclick = () =>{
+                loginForm.classList.toggle('active');
+                navbar.classList.remove('active');
+                searchForm.classList.remove('active');
+            }
+            
+            let searchForm = document.querySelector('.search-form')
+            
+            document.querySelector('#search-btn').onclick = () =>{
+                searchForm.classList.toggle('active');
+                navbar.classList.remove('active');
+                loginForm.classList.remove('active');
+            }
+            
+            window.onscroll = () =>{
+                navbar.classList.remove('active');
+                loginForm.classList.remove('active');
+                searchForm.classList.remove('active');
+            }
+            
+            let themeBtn = document.querySelector('#theme-btn');
+            
+            themeBtn.onclick = () =>{
+                themeBtn.classList.toggle('fa-sun');
+            
+                if(themeBtn.classList.contains('fa-sun')){
+                    document.body.classList.add('active');
+                }else{
+                    document.body.classList.remove('active');
+                }
+            
+            };
+            
+            var swiper = new Swiper(".review-slider", {
+                loop:true,
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 5500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });</script>
+
+            
+    </body>
+</html>
