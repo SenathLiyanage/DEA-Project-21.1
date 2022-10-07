@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+
+    <!-- Title Page-->
+    <title>Create Your Account</title>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Main CSS-->
+    <link href="8.css" rel="stylesheet" media="all">
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780">
+            <div class="card card-3">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    <h2 class="title">Create Your Account...</h2>
+
+                    <form method="POST">
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Name :" name="name">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-3 js-datepicker" type="text" placeholder="Age :" name="age">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Address :" name="add">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Country:" name="con">
+                        </div>
+                      
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Email :" name="email">
+                        </div>
+
+                    
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="gender">
+                                    <option disabled="disabled" selected="selected">Gender :</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Other</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Contact Number :" name="cnum">
+                        </div>
+
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Grade :" name="grade">
+                        </div>
+
+
+                        <div class="p-t-10">
+                            <button class="btn btn--pill btn--green" type="submit">Confirm</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main JS-->
+    <script>
+        (function ($) {
+            'use strict';
+      
+            try {
+                $('.js-datepicker').daterangepicker({
+                    "singleDatePicker": true,
+                    "showDropdowns": true,
+                    "autoUpdateInput": false,
+                    locale: {
+                        format: 'DD/MM/YYYY'
+                    },
+                });
+            
+                var myCalendar = $('.js-datepicker');
+                var isClick = 0;
+            
+                $(window).on('click',function(){
+                    isClick = 0;
+                });
+            
+                $(myCalendar).on('apply.daterangepicker',function(ev, picker){
+                    isClick = 0;
+                    $(this).val(picker.startDate.format('DD/MM/YYYY'));
+            
+                });
+            
+                $('.js-btn-calendar').on('click',function(e){
+                    e.stopPropagation();
+            
+                    if(isClick === 1) isClick = 0;
+                    else if(isClick === 0) isClick = 1;
+            
+                    if (isClick === 1) {
+                        myCalendar.focus();
+                    }
+                });
+            
+                $(myCalendar).on('click',function(e){
+                    e.stopPropagation();
+                    isClick = 1;
+                });
+            
+                $('.daterangepicker').on('click',function(e){
+                    e.stopPropagation();
+                });
+            
+            
+            } catch(er) {console.log(er);}
+         
+            
+            try {
+                var selectSimple = $('.js-select-simple');
+            
+                selectSimple.each(function () {
+                    var that = $(this);
+                    var selectBox = that.find('select');
+                    var selectDropdown = that.find('.select-dropdown');
+                    selectBox.select2({
+                        dropdownParent: selectDropdown
+                    });
+                });
+            
+            } catch (err) {
+                console.log(err);
+            }
+            
+        
+        })(jQuery);
+    </script>
+
+</body>
+
+</html>
