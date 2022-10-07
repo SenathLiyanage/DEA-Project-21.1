@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>create account</title>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+ 
+     <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ 
+<!-- custom css file cdn link  -->
+    <link rel="stylesheet" href="2.css">
+   </head>
+<body>
+
+    
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-paper-plane"></i> Phoneix Airline</a>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="searchBox">
+        <label for="searchBox" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="1.html">Home</a>
+        <a href="">Profile</a>
+        <a href="2.html">Create Account</a>
+        <a href="4.html">Contact</a>
+        <a href="3.html">About</a>
+        
+    </nav>
+
+    <form action="" class="login-form">
+
+        <div class="inputBox">
+            <span>username</span>
+            <input type="text" placeholder="enter your name">
+        </div>
+
+        <div class="inputBox">
+            <span>password</span>
+            <input type="password" placeholder="enter your password">
+        </div>
+
+        <div class="remember">
+            <input type="checkbox" name="" id="login-remember">
+            <label for="login-remember">remember me</label>
+        </div>
+
+        <input type="submit" class="btn" value="login">
+
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+  <div class="container">
+    <div class="title">Create Your Account</div>
+    <div class="content">
+        
+        
+      <form action="createacc"  method="POST">
+        <div class="user-details">
+            
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" name="name" value="" placeholder="Enter your name" required>
+          </div>
+            
+          <div class="input-box">
+            <span class="details">Country Code</span>
+            <input type="text" name="code" value="" placeholder="Enter your country code" required>
+          </div>
+            
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text"  name="mail" value=""placeholder="Enter your email" required>
+          </div>
+            
+          <div class="input-box">
+            <span class="details">Contact Number</span>
+            <input type="text"  name="num" value=""placeholder="Enter your number" required>
+          </div>
+            
+          <div class="input-box">
+            <span class="details">Create Password</span>
+            <input type="text" name="psw1" value="" placeholder="Create your password" required>
+          </div>
+            
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text"  name="psw2" value=""placeholder="Confirm your password" required>
+          </div>
+            
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gen" value="" name="gender" id="dot-1">
+          <input type="radio"   name="gen" value=""name="gender" id="dot-2">
+          <input type="radio"   name="gen" value=""name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span  name="gen" value=""class="gender">Male</span>
+          </label>
+              
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span  name="gen" value=""class="gender">Female</span>
+          </label>
+              
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span  name="gen" value=""class="gender">Prefer not to say</span>
+            </label>
+          </div>
+          
+          
+        </div>
+        <div class="button">
+          <input type="submit" value="confirm">
+         <br><br>
+          <input type="reset" value="cancel">
+        </div>
+          
+      </form>
+    </div>
+  </div>
+
+  
+
+  <script>let navbar = document.querySelector('.navbar')
+
+    document.querySelector('#menu-btn').onclick = () =>{
+        navbar.classList.toggle('active');
+        loginForm.classList.remove('active');
+        searchForm.classList.remove('active');
+    }
+    
+    let loginForm = document.querySelector('.login-form')
+    
+    document.querySelector('#login-btn').onclick = () =>{
+        loginForm.classList.toggle('active');
+        navbar.classList.remove('active');
+        searchForm.classList.remove('active');
+    }
+    
+    let searchForm = document.querySelector('.search-form')
+    
+    document.querySelector('#search-btn').onclick = () =>{
+        searchForm.classList.toggle('active');
+        navbar.classList.remove('active');
+        loginForm.classList.remove('active');
+    }
+    
+    window.onscroll = () =>{
+        navbar.classList.remove('active');
+        loginForm.classList.remove('active');
+        searchForm.classList.remove('active');
+    }
+    
+    let themeBtn = document.querySelector('#theme-btn');
+    
+    themeBtn.onclick = () =>{
+        themeBtn.classList.toggle('fa-sun');
+    
+        if(themeBtn.classList.contains('fa-sun')){
+            document.body.classList.add('active');
+        }else{
+            document.body.classList.remove('active');
+        }
+    
+    };
+    
+    var swiper = new Swiper(".review-slider", {
+        loop:true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 5500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });</script>
+</body>
+</html>
