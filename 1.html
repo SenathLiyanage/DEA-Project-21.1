@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Airline</title>
+
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file cdn link  -->
+    <link rel="stylesheet" href="1.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-paper-plane"></i> Phoneix Airline</a>
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="searchBox">
+        <label for="searchBox" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+
+    <nav class="navbar">
+        <a href="1.html">Home</a>
+        <a href="">Profile</a>
+        <a href="2.html">Create Account</a>
+        <a href="4.html">Contact</a>
+        <a href="3.html">About</a>
+        
+    </nav>
+
+    <form action="Login"  method="POST"  class="login-form">
+
+     
+       <div class="inputBox">
+            <span>username</span>
+            <input type="text"  name="uname" placeholder="enter your name">
+        </div>
+
+        <div class="inputBox">
+            <span>password</span>
+            <input type="password" name="pass" placeholder="enter your password">
+        </div>
+
+        <div class="remember">
+            <input type="checkbox" name="" id="login-remember">
+            <label for="login-remember">remember me</label>
+        </div>
+
+        <input type="submit" class="btn" value="login" >
+
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="image" data-aos="fade-down">
+        <img src="images/1.jpg" alt="">
+    </div>
+
+    <div class="content" data-aos="fade-up">
+        <h3>Ready To Take Off</h3>
+        <p>Phoenix Airlines is a leading flight price comparison website that finds you the best deal on air tickets. At Flight Search Direct , as seasoned travelers ourselves who have always sought out the best ways in which to save money when traveling, we fully understand how frustrating it is when you have to spend hours on end try-ing to compare flight prices.</p>
+        <a href="#" class="btn">explore now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+
+<!-- filter form section starts  -->
+
+<section class="form-container" data-aos="zoom-in">
+
+    <form action="">
+
+        <div class="inputBox">
+            <select name="category" id="cat">
+                <option value="volvo">One-way</option>
+                <option value="saab">Round trip</option>
+                <option value="opel">Multy city</option>
+              </select>
+        </div>
+
+        <div class="inputBox">
+            <select name="category" id="cat">
+                <option value="volvo">Economy</option>
+                <option value="saab">Premium Economy</option>
+                <option value="opel">Business</option>
+                <option value="opel">Multiple</option>
+              </select>
+        </div>
+
+        <div class="inputBox">
+            
+            <input type="text" placeholder="ticket">
+        </div>
+
+        <div class="inputBox">
+           
+            <input type="text" placeholder="bags">
+        </div>
+
+        <div class="inputBox">
+           
+            <select name="category" id="cat">
+                <option value="volvo">Adults (18-64)</option>
+                <option value="saab">Students (over 18)</option>
+                <option value="opel">Seniors (65+)</option>
+                <option value="opel">Youths (12-17)</option>
+                <option value="opel">Childrens (2-11)</option>
+                <option value="opel">Infants on lap (under 2)</option>
+              </select>
+        </div>
+
+        <div class="inputBox">
+            <span>where to</span>
+            <input type="text" placeholder="search places">
+        </div>
+
+        <div class="inputBox">
+            <span>where to</span>
+            <input type="text" placeholder="search places">
+        </div>
+
+        <div class="inputBox">
+            <span>arrivals</span>
+            <input type="date">
+        </div>
+
+        <div class="inputBox">
+            <span>leaving</span>
+            <input type="date">
+        </div>
+
+        <input type="submit" value="book now" class="btn">
+
+    </form>
+
+</section>
+
+<!-- filter form section ends -->
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up">
+            <h3>our branches</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> russia </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> japan </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> france </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> canada </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <h3>quick links</h3>
+            <a href="1.html"> <i class="fas fa-chevron-right"></i> home </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Flights </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> Profile </a>
+            <a href="2.html"> <i class="fas fa-chevron-right"></i> create account </a>
+            <a href="3.html"> <i class="fas fa-chevron-right"></i> about us </a>
+            <a href="4.html"> <i class="fas fa-chevron-right"></i> contact us </a>
+           
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +94-556644 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +94-6644332 </a>
+            <a href="#"> <i class="fas fa-gmail"></i> phoenix@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Colombo </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+   <!--------------------------------------chat box-------------------------->
+   <div class="chatbox-wrapper">
+    <div class="chatbox-toggle">
+        <i class='bx bx-message-dots'></i>
+    </div>
+    <div class="chatbox-message-wrapper">
+        <div class="chatbox-message-header">
+            <div class="chatbox-message-profile">
+                <img src="images/7.png">
+                <div>
+                    <h4 class="chatbox-message-name">Phoneix Airline</h4>
+                    <p class="chatbox-message-status">online</p>
+                </div>
+            </div>
+            <div class="chatbox-message-dropdown">
+                <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'></i>
+                <ul class="chatbox-message-dropdown-menu">
+                    <li>
+                        <a href="#">Search</a>
+                    </li>
+                    <li>
+                        <a href="#">Report</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="chatbox-message-content">
+            <h4 class="chatbox-message-no-message">You don't have message yet!</h4>
+
+        </div>
+        <div class="chatbox-message-bottom">
+            <form action="#" class="chatbox-message-form">
+                <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+                <button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="1.js"></script>
+
+<script>
+
+AOS.init({
+    duration:800,
+    delay:400
+});
+
+</script>
+
+
+
+<script>
+    // MESSAGE INPUT
+const textarea = document.querySelector('.chatbox-message-input')
+const chatboxForm = document.querySelector('.chatbox-message-form')
+
+textarea.addEventListener('input', function () {
+	let line = textarea.value.split('\n').length
+
+	if(textarea.rows < 6 || line < 6) {
+		textarea.rows = line
+	}
+
+	if(textarea.rows > 1) {
+		chatboxForm.style.alignItems = 'flex-end'
+	} else {
+		chatboxForm.style.alignItems = 'center'
+	}
+})
+
+
+// TOGGLE CHATBOX
+const chatboxToggle = document.querySelector('.chatbox-toggle')
+const chatboxMessage = document.querySelector('.chatbox-message-wrapper')
+
+chatboxToggle.addEventListener('click', function () {
+	chatboxMessage.classList.toggle('show')
+})
+
+
+// DROPDOWN TOGGLE
+const dropdownToggle = document.querySelector('.chatbox-message-dropdown-toggle')
+const dropdownMenu = document.querySelector('.chatbox-message-dropdown-menu')
+
+dropdownToggle.addEventListener('click', function () {
+	dropdownMenu.classList.toggle('show')
+})
+
+document.addEventListener('click', function (e) {
+	if(!e.target.matches('.chatbox-message-dropdown, .chatbox-message-dropdown *')) {
+		dropdownMenu.classList.remove('show')
+	}
+})
+
+
+
+// CHATBOX MESSAGE
+const chatboxMessageWrapper = document.querySelector('.chatbox-message-content')
+const chatboxNoMessage = document.querySelector('.chatbox-message-no-message')
+
+chatboxForm.addEventListener('submit', function (e) {
+	e.preventDefault()
+
+	if(isValid(textarea.value)) {
+		writeMessage()
+		setTimeout(autoReply, 1000)
+	}
+})
+
+function addZero(num) {
+	return num < 10 ? '0'+num : num
+}
+
+function writeMessage() {
+	const today = new Date()
+	let message = `
+		<div class="chatbox-message-item sent">
+			<span class="chatbox-message-item-text">
+				${textarea.value.trim().replace(/\n/g, '<br>\n')}
+			</span>
+			<span class="chatbox-message-item-time">${addZero(today.getHours())}:${addZero(today.getMinutes())}</span>
+		</div>
+	`
+	chatboxMessageWrapper.insertAdjacentHTML('beforeend', message)
+	chatboxForm.style.alignItems = 'center'
+	textarea.rows = 1
+	textarea.focus()
+	textarea.value = ''
+	chatboxNoMessage.style.display = 'none'
+	scrollBottom()
+}
+
+function autoReply() {
+	const today = new Date()
+	let message = `
+		<div class="chatbox-message-item received">
+			<span class="chatbox-message-item-text">
+				Thank you for your awesome support!
+			</span>
+			<span class="chatbox-message-item-time">${addZero(today.getHours())}:${addZero(today.getMinutes())}</span>
+		</div>
+	`
+	chatboxMessageWrapper.insertAdjacentHTML('beforeend', message)
+	scrollBottom()
+}
+
+function scrollBottom() {
+	chatboxMessageWrapper.scrollTo(0, chatboxMessageWrapper.scrollHeight)
+}
+
+function isValid(value) {
+	let text = value.replace(/\n/g, '')
+	text = text.replace(/\s/g, '')
+
+	return text.length > 0
+}
+</script>
+
+
+</body>
+</html>
